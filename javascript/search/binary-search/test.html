@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>binary search</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../../utils/utils.js"></script>
+    <script type="text/javascript" src="binary-search.js"></script>
+    <script type="text/javascript">
+
+        //create array and sorting
+        var v = new Array(100).randomize().sort();
+
+        //array created
+        console.log(v.toString());
+
+        //print first position for value 16 on Array
+        console.log("16 está em:", v.binarySearch(16, 0, v.length-1));
+    </script>
+</head>
+</html>
