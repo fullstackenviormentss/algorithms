@@ -15,24 +15,29 @@ function bubblesort($vector) {
 
     $len = count($vector);
 
-    for ($i = 0; $i < $len; $i++) {
+    do {
 
-        for ($j = $i; $j < $len - $i; $j++) {
+        $hasSwap = false;
 
-                // echo $i;
-            if ($vector[$i] > $vector[$j + 1]) {
+        for ($j = 0; $j < $len - 1; $j++) {
+
+            if ($vector[$j] > $vector[$j + 1]) {
+
                 $temp = $vector[$j + 1];
-                $vector[$j + 1] = $vector[$i];
-                $vector[$i] = $temp;
+                $vector[$j + 1] = $vector[$j];
+                $vector[$j] = $temp;
+
+                $hasSwap = true;
             }
 
         }
-    }
+
+    } while($hasSwap);
 
     return $vector;
 }
 
-$v = array(9, 8, 7, 6, 5, 3, 2, 1, 0);
+$v = array(9, 82, 7, 1, 3, 6, 5, 3, 2, 1, 0);
 
 // array before
 print_r($v);
