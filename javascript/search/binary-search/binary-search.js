@@ -6,7 +6,7 @@
 Array.prototype.binarySearch = function(value, start, end){
     
     var middle = end - start;
-    var pivot = Math.floor(middle / 2) + start;
+    var pivot  = Math.floor(middle / 2) + start;
 
     if(start >= end && value != this[pivot]){
         return -1;
@@ -23,7 +23,7 @@ Array.prototype.binarySearch = function(value, start, end){
     
         }else{
     
-            return this.binarySearch(value, pivot+1, end);
+            return this.binarySearch(value, pivot + 1, end);
     
         }
     }
