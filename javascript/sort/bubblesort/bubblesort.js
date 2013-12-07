@@ -11,23 +11,33 @@
 
 Array.prototype.bubblesort = function () {
 
-    for (var i = 0; i < this.length; i++) {
+    'use strict';
 
-        for (var j = i; j < this.length - i; j++) {
+    var hasSwap;
 
-            if (this[i] > this[j + 1]) {
-                var temp = this[j + 1];
-                this[j + 1] = this[i];
+    do {
+
+        hasSwap = false;
+
+        for (var i = 0; i < this.length - 1; i++) {
+
+            if (this[i] > this[i + 1]) {
+
+                var temp = this[i + 1];
+                this[i + 1] = this[i];
                 this[i] = temp;
+
+                hasSwap = true;
             }
 
         }
-    }
+
+    } while (hasSwap);
 
     return this;
 };
 
-var v = [9, 8, 7, 6, 5, 3, 2, 1];
+var v = [9, 82, 7, 1, 3, 6, 5, 3, 2, 1, 0];
 
 console.log(v);
 
