@@ -9,10 +9,6 @@
 <br>
 [Davidson Fellipe](https://github.com/davidsonfellipe)
 
-## Contribute
-
-Anyone and everyone is welcome to contribute. See some [developers](https://github.com/davidsonfellipe/keepfast/graphs/contributors) that helped.
-
 ## License
 
 Code is under [MIT](http://davidsonfellipe.mit-license.org) license
