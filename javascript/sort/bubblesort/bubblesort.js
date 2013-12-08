@@ -13,17 +13,19 @@ Array.prototype.bubblesort = function () {
 
     'use strict';
 
-    var hasSwap;
+    var hasSwap,
+        i,
+        temp;
 
     do {
 
         hasSwap = false;
 
-        for (var i = 0; i < this.length - 1; i++) {
+        for (i = 0; i < this.length - 1; i++) {
 
             if (this[i] > this[i + 1]) {
 
-                var temp = this[i + 1];
+                temp = this[i + 1];
                 this[i + 1] = this[i];
                 this[i] = temp;
 
