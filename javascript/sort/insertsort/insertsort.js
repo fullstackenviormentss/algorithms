@@ -13,26 +13,25 @@ Array.prototype.randomize = function() {
 
 Array.prototype.insertSort = function(){
     "use strict";
-    
+
     //has swap?
     var swap = 0;
-    
+
     for(var i=1; i<this.length; i++){
-        
+
         for(var j=0; j < i; j++){
-        
+
             if(this[i] < this[j]){
-                 
+
                 swap = this[i];
                 this[i] = this[j];
                 this[j] = swap;
 
-                
             }
-            
+
         }
     }
-    
+
     return this;
 };
 
